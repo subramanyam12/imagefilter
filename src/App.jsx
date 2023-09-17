@@ -35,7 +35,6 @@ function App() {
     let c=document.createElement('canvas');
     c.width=downdata.naturalWidth
     c.height=downdata.naturalHeight
-    c.style='border:1px solid black'
     let ctx=c.getContext('2d');
     ctx.filter=`saturate(${ranges.Saturation}%) brightness(${ranges.Brightness}%) blur(${ranges.Blur}px) contrast(${ranges.Contrast}%)` 
     
