@@ -66,3 +66,4 @@ const Image = forwardRef(({imagebool,setimagebool,down,ranges,rotate,setranges},
 })
 
 export default Image
+
