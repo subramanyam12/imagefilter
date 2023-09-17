@@ -1,0 +1,70 @@
+body{
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add:before{
+  content: '';
+  position: absolute;
+  top:50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3px;
+  height:15px;
+  background-color: rgb(218, 214, 214);
+}
+
+.add:after{
+  content: '';
+  position: absolute;
+  top:50%;
+  right:-9px;
+  transform: translateY(-50%);
+  width: 15px;
+  height:3px;
+  background-color: rgb(218, 214, 214);
+}
+
+.contain{
+  object-fit: contain;
+}
+
+.cover{
+  object-fit: cover;
+}
+
+
+/*
+ input[type="range"] {
+  appearance: none;  
+  width: 100%; 
+  height: 10px; 
+  background: red; 
+   outline: 1px solid red; 
+}  
+
+
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none;  
+  width: 15px;
+   height: 15px; 
+  background: #edeef0; 
+  border: 4px solid #1b03f5; 
+  border-radius: 50%; 
+   cursor: pointer;   
+} 
+
+ Style the thumb (the draggable handle) for Firefox
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #007bff;
+  border: 2px solid #0056b3;
+  border-radius: 50%;
+  cursor: pointer;
+} */
+
+
+
+
