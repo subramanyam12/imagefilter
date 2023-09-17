@@ -55,7 +55,7 @@ const Image = forwardRef(({imagebool,setimagebool,down,ranges,rotate,setranges},
    <input type="file" onChange={(e)=>media(e.target)} ref={open} accept='image/*' hidden/>
     {imagebool ? (
       <div onClick={file} onDragOver={(e)=>e.preventDefault()} onDrop={drop} className='w-full h-[250px] text-white flex gap-4 justify-center items-center flex-col outline-dashed outline-2 outline-gray-400'>
-        <img className='w-32' src='src\assets\drag-drop.png'/>
+        <img className='w-32' src='src\components\drag-drop.png'/>
        <p className='text-lg text-center '>Drag and Drop or Click Here<br /> to Upload Image</p>
       </div>
       ):(
