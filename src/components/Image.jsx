@@ -8,6 +8,7 @@ const Image = forwardRef(({imagebool,setimagebool,down,ranges,rotate,setranges},
     const img=useRef()
     const open =useRef()
 
+    
     useEffect(()=>{
         if(!imagebool){
             img.current.style.filter=`saturate(${ranges.Saturation}%) brightness(${ranges.Brightness}%) blur(${ranges.Blur}px) contrast(${ranges.Contrast}%)`;

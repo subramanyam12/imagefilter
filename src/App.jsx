@@ -33,8 +33,8 @@ function App() {
 
   const download=()=>{
     let c=document.createElement('canvas');
-    c.width=downdata.src.naturalWidth
-    c.height=downdata.src.naturalHeight
+    c.width=downdata.naturalWidth
+    c.height=downdata.naturalHeight
     c.style='border:1px solid black'
     let ctx=c.getContext('2d');
     ctx.filter=`saturate(${ranges.Saturation}%) brightness(${ranges.Brightness}%) blur(${ranges.Blur}px) contrast(${ranges.Contrast}%)` 
@@ -69,7 +69,7 @@ function App() {
       else if(rotate.hor===-1 && rotate.ver===-1){
         ctx.translate(-c.width,-c.height)
       }
-    ctx.drawImage(downdata.src,0,0)
+    ctx.drawImage(downdata,0,0)
     //document.body.append(c)
     
      let url=c.toDataURL()
@@ -81,7 +81,7 @@ function App() {
    }
 
   const down=(src)=>{
-    setdowndata({src})
+    setdowndata(src)
   }
  
 
