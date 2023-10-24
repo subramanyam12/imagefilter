@@ -60,7 +60,7 @@ const Image = forwardRef(({imagebool,setimagebool,down,ranges,rotate,setranges},
        <p className='text-lg text-center '>Drag and Drop or Click Here<br /> to Upload Image</p>
       </div>
       ):(
-       <img src="" ref={img} onClick={imagefit} className={`w-full rounded-xl h-[250px] ${list[fit]}`} />
+       <img src="" ref={img} onClick={imagefit} className={`w-[300px] rounded-xl h-[250px] ${list[fit]}`} />
       )}
    </>
   )
